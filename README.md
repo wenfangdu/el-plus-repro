@@ -1,5 +1,7 @@
 # element-plus-repro
 
+[Element Plus Repo](https://github.com/element-plus/element-plus)
+
 ## Project setup
 
 ```
