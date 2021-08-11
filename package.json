@@ -23,7 +23,9 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.16.0",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "sass": "^1.37.5",
+    "sass-loader": "^10.2.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
