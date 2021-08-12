@@ -1,4 +1,6 @@
-<script src="./App.jsx"></script>
+<template>
+  <el-button type="primary">Foo</el-button>
+</template>
 
 <style>
   body {
