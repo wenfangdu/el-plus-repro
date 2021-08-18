@@ -1,23 +1,8 @@
-import { createApp, defineComponent } from 'vue'
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/lib/theme-chalk/index.css'
 import App from './App.vue'
-import installElementPlus from './plugins/element'
-import { useLocale, useLocaleProps } from 'element-plus'
 
-const ConfigProvider = defineComponent({
-  props: useLocaleProps,
-  setup(props, { slots }) {
-    useLocale()
-
-    return () => slots.default()
-  },
-})
-
-const app = createApp(
-  <ConfigProvider>
-    <App />
-  </ConfigProvider>,
-)
-
-installElementPlus(app)
-
+const app = createApp(App)
+app.use(ElementPlus)
 app.mount('#app')
